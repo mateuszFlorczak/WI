@@ -80,10 +80,10 @@ namespace WI
             
 
             //PictureBox picture = new PictureBox();
-            pictureBox1.Image = this.imageList1.Images[this.listView1.FocusedItem.Index]; //this.listView1.GetItemAt(this.listView1.FocusedItem.Position.X, this.listView1.FocusedItem.Position.Y);
+            //pictureBox1.Image = this.imageList1.Images[this.listView1.FocusedItem.Index]; //this.listView1.GetItemAt(this.listView1.FocusedItem.Position.X, this.listView1.FocusedItem.Position.Y);
             //picture.Size = new Size(150, 250);
             //picture.Show();
-            System.Console.Out.WriteLine(files[this.listView1.FocusedItem.Index].FullName);
+            //System.Console.Out.WriteLine(files[this.listView1.FocusedItem.Index].FullName);
             Form2 form = new Form2(files[this.listView1.FocusedItem.Index].FullName);
             form.Show();
             System.Console.Out.WriteLine("dziala");
