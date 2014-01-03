@@ -8,3 +8,13 @@ C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.csproj.GenerateResource
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.exe
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.pdb
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form1.resources
+D:\projekty\WI\WI\WI\bin\Debug\WI.exe.config
+D:\projekty\WI\WI\WI\bin\Debug\WI.exe
+D:\projekty\WI\WI\WI\bin\Debug\WI.pdb
+D:\projekty\WI\WI\WI\obj\Debug\WI.csprojResolveAssemblyReference.cache
+D:\projekty\WI\WI\WI\obj\Debug\WI.Properties.Resources.resources
+D:\projekty\WI\WI\WI\obj\Debug\WI.csproj.GenerateResource.Cache
+D:\projekty\WI\WI\WI\obj\Debug\WI.exe
+D:\projekty\WI\WI\WI\obj\Debug\WI.pdb
+D:\projekty\WI\WI\WI\obj\Debug\WI.Form2.resources
+D:\projekty\WI\WI\WI\obj\Debug\WI.Form1.resources
