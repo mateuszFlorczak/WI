@@ -12,10 +12,10 @@ namespace WI
 {
     public partial class Form2 : Form
     {
-        public Form2(string file)
+        public Form2(Image img)
         {
             InitializeComponent();
-            pictureBox1.Image = Image.FromFile(file);
+            pictureBox1.Image = img;
         }
     }
 }

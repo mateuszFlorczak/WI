@@ -18,3 +18,12 @@ D:\projekty\WI\WI\WI\obj\Debug\WI.exe
 D:\projekty\WI\WI\WI\obj\Debug\WI.pdb
 D:\projekty\WI\WI\WI\obj\Debug\WI.Form2.resources
 D:\projekty\WI\WI\WI\obj\Debug\WI.Form1.resources
+D:\studia\Projekty\WI\WI\WI\bin\Debug\WI.exe
+D:\studia\Projekty\WI\WI\WI\bin\Debug\WI.pdb
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.csprojResolveAssemblyReference.cache
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.Form1.resources
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.Form2.resources
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.Properties.Resources.resources
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.csproj.GenerateResource.Cache
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.exe
+D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.pdb
