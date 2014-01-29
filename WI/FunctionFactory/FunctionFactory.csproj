@@ -41,10 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\IntSlider.cs">
+    <Compile Include="CoreControls\IntSlider.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\IntSlider.Designer.cs">
+    <Compile Include="CoreControls\IntSlider.Designer.cs">
       <DependentUpon>IntSlider.cs</DependentUpon>
     </Compile>
     <Compile Include="CoreFunctions\Quantization.cs" />
@@ -55,14 +55,14 @@
       <DependentUpon>DefaultForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FunctionFactory.cs" />
-    <Compile Include="IForm.cs" />
+    <Compile Include="Interfaces\IForm.cs" />
     <Compile Include="Interfaces\IFunction.cs" />
     <Compile Include="Interfaces\IFunctionParam.cs" />
     <Compile Include="Interfaces\IValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controls\IntSlider.resx">
+    <EmbeddedResource Include="CoreControls\IntSlider.resx">
       <DependentUpon>IntSlider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DefaultForm.resx">

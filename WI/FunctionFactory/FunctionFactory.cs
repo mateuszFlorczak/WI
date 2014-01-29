@@ -17,20 +17,10 @@ namespace FunctionFactory
         {
             Functions = new List<IFunction>();
             Functions.Add(new Quantization());
-            CreateQuantization();
-        }
-        private IFunction CreateQuantization()
-        {
-            //getDefaultForm().AddControl(newIntSlider(2, 4, 8, 16, 32)).Show();
-            return null;
         }
         public IForm GetDefaultForm()
         {
             return new EmptyForm();
         }
-        //private IntSlider newIntSlider(params int[] values)
-        //{
-        //    return new IntSlider(values);
-        //}
     }
 }
