@@ -104,6 +104,18 @@ namespace WI
             }
         }
 
+        private void button13_Click(object sender, EventArgs e)
+        {
+            var ff = new FunctionFactory.FunctionFactory();
+            var form = ff.GetDefaultForm();
+            foreach (var p in ff.Functions[0].ParamList)
+            {
+                form.AddControl(p.GetUserControl);
+            }
+            form.OkButton += (s, ee) => ff.Functions[0].Calculate(null);
+            form.Show();
+        }
+
         /*private void open_Click(object sender, EventArgs e)
         {
             //backgroundWorker.RunWorkerAsync();
