@@ -25,19 +25,31 @@ namespace FunctionFactory
 
         void IForm.Show()
         {
-            this.Show();
+            this.ShowDialog();
+        }
+
+        Image IForm.ImagePreview
+        {
+            get
+            {
+                return this.ImageBox.Image;
+            }
+            set
+            {
+                this.ImageBox.Image = value;
+            }
         }
 
         private void btOk_Click(object sender, EventArgs e)
         {
             OkButton.Invoke(this, e);
+            this.Close();
         }
 
         private void btCancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
 
         public EventHandler OkButton { get; set; }
     }

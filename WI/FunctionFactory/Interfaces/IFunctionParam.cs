@@ -9,6 +9,6 @@ namespace FunctionFactory
 {
     public interface IFunctionParamControl
     {
-        UserControl GetUserControl { get; }
+        UserControl UserControl { get; }
     }
 }

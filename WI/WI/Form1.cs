@@ -106,11 +106,11 @@ namespace WI
 
         private void button13_Click(object sender, EventArgs e)
         {
-            var ff = new FunctionFactory.FunctionFactory();
+            var ff = new FunctionFactory.Factory();
             var form = ff.GetDefaultForm();
             foreach (var p in ff.Functions[0].ParamList)
             {
-                form.AddControl(p.GetUserControl);
+                form.AddControl(p.UserControl);
             }
             form.OkButton += (s, ee) => ff.Functions[0].Calculate(null);
             form.Show();

@@ -7,7 +7,6 @@ C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Properties.Resources.re
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.csproj.GenerateResource.Cache
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.exe
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.pdb
-C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form1.resources
 D:\projekty\WI\WI\WI\bin\Debug\WI.exe.config
 D:\projekty\WI\WI\WI\bin\Debug\WI.exe
 D:\projekty\WI\WI\WI\bin\Debug\WI.pdb
@@ -30,3 +29,5 @@ D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.pdb
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form2.resources
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\bin\Debug\FunctionFactory.dll
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\bin\Debug\FunctionFactory.pdb
+C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.MainWindow.resources
+C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form1.resources

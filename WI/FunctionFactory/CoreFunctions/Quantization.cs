@@ -24,7 +24,7 @@ namespace FunctionFactory.CoreFunctions
 
         public string EnglishName
         {
-            get { return ""; }
+            get { return "Quantization"; }
         }
 
         public string PolishName

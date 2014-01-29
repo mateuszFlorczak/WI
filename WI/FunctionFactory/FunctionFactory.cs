@@ -9,11 +9,11 @@ using FunctionFactory.CoreFunctions;
 
 namespace FunctionFactory
 {
-    public class FunctionFactory
+    public class Factory
     {
         public IList<IFunction> Functions { get; set; }
 
-        public FunctionFactory()
+        public Factory()
         {
             Functions = new List<IFunction>();
             Functions.Add(new Quantization());

@@ -49,7 +49,7 @@ namespace FunctionFactory.Controls
         }
 
 
-        public UserControl GetUserControl
+        public UserControl UserControl
         {
             get { return this; }
         }
