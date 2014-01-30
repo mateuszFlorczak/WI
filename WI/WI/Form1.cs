@@ -67,8 +67,8 @@ namespace WI
 
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            Form2 form = new Form2(quantized[listView1.FocusedItem.Index].getImg());
-            form.Show();
+            //ImagePreview form = new ImagePreview(quantized[listView1.FocusedItem.Index].getImg());
+            //form.Show();
         }
 
         private void przedzialy_ValueChanged(object sender, EventArgs e)
@@ -94,8 +94,8 @@ namespace WI
             {
                 quantized.Add(new quantization(quantized[listView1.FocusedItem.Index].getImg()));
                 quantized.Last().rownomierna(przedzialy.Value);
-                Form2 form = new Form2(quantized.Last().getImg());
-                form.Show();
+                //ImagePreview form = new ImagePreview(quantized.Last().getImg());
+                //form.Show();
                 imageList1.Images.Add(quantized.Last().getImg());
                 ListViewItem item = new ListViewItem();
                 item.ImageIndex = quantized.Count() - 1;

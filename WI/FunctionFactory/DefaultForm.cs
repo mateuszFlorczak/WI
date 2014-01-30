@@ -12,6 +12,8 @@ namespace FunctionFactory
 {
     public partial class EmptyForm : Form, IForm
     {
+        Image orginal;
+
         public EmptyForm()
         {
             InitializeComponent();
@@ -19,7 +21,7 @@ namespace FunctionFactory
         }
         IForm IForm.AddControl(UserControl newControl)
         {
-            this.flowLayoutPanel1.Controls.Add(newControl);
+            this.ParameterPlace.Controls.Add(newControl);
             return this;
         }
 
@@ -28,16 +30,10 @@ namespace FunctionFactory
             this.ShowDialog();
         }
 
-        Image IForm.ImagePreview
+        public void SetImagePreview(Image image)
         {
-            get
-            {
-                return this.ImageBox.Image;
-            }
-            set
-            {
-                this.ImageBox.Image = value;
-            }
+            orginal = image;
+            this.PreviewImage.Image = new Bitmap(image, this.PreviewImage.Size);
         }
 
         private void btOk_Click(object sender, EventArgs e)
@@ -52,5 +48,10 @@ namespace FunctionFactory
         }
 
         public EventHandler OkButton { get; set; }
+
+        private void EmptyForm_SizeChanged(object sender, EventArgs e)
+        {
+            this.SetImagePreview(this.orginal);
+        }
     }
 }

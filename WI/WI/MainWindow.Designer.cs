@@ -152,6 +152,7 @@
             this.ImageListView.TabIndex = 0;
             this.ImageListView.UseCompatibleStateImageBehavior = false;
             this.ImageListView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ImageListView_ItemSelectionChanged);
+            this.ImageListView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ImageListView_MouseDoubleClick);
             // 
             // splitContainer2
             // 

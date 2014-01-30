@@ -11,10 +11,11 @@ using FunctionFactory;
 
 namespace WI
 {
-    public partial class MainWindow : Form
+    public partial class MainWindow : Form, MouseMoveListener
     {
-        IList<Image> _ImageListOrginal = new List<Image>();
-        Image _MainImageOrginal;
+        IList<Bitmap> _ImageListOrginal = new List<Bitmap>();
+        Bitmap _MainImageOrginal;
+        IList<ImagePreview> _PreviewList = new List<ImagePreview>();
 
         Factory _FunctionFactory = new Factory();
 
@@ -53,21 +54,22 @@ namespace WI
             foreach (var control in function.ParamList)
                 form.AddControl(control.UserControl);
             form.OkButton += (s, e) => AddImageToImageListView(function.Calculate(bitmap));
-            form.ImagePreview = new Bitmap(bitmap);
+            form.SetImagePreview(bitmap);
             form.Show();
         }
 
         private void AddImageToImageListView(Image image)
         {
-            ImageList.Images.Add(image);
-            _ImageListOrginal.Add(image);
+            Bitmap bitmap = new Bitmap(image);
+            ImageList.Images.Add(bitmap);
+            _ImageListOrginal.Add(bitmap);
             var item = new ListViewItem();
             item.ImageIndex = ImageListView.Items.Count;
             ImageListView.Items.Add(item);
-            SetMainImage(image);
+            SetMainImage(bitmap);
         }
 
-        private void SetMainImage(Image image)
+        private void SetMainImage(Bitmap image)
         {
             _MainImageOrginal = image;
             MainImage.Image = new Bitmap(image, MainImage.Size);
@@ -97,6 +99,21 @@ namespace WI
         {
             OpenNewImage.ShowDialog();
             AddImageToImageListView(Image.FromFile(OpenNewImage.FileName));
+        }
+
+        private void ImageListView_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            //block duplicate windows?
+            int index = ImageListView.FocusedItem.Index;
+            ImagePreview preview = new ImagePreview(_ImageListOrginal[index], this);
+            _PreviewList.Add(preview);
+            preview.Show();
+        }
+
+        public new void OnMouseMove(MouseEventArgs e)
+        {
+            foreach (var preview in _PreviewList)
+                preview.OnMouseMove(e);
         }
     }
 }

@@ -26,8 +26,8 @@ D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.Properties.Resources.resources
 D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.csproj.GenerateResource.Cache
 D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.exe
 D:\studia\Projekty\WI\WI\WI\obj\Debug\WI.pdb
-C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form2.resources
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\bin\Debug\FunctionFactory.dll
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\bin\Debug\FunctionFactory.pdb
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.MainWindow.resources
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form1.resources
+C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.ImagePreview.resources
