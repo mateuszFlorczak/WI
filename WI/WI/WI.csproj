@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmptyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmptyForm.Designer.cs">
+      <DependentUpon>EmptyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,7 @@
     <Compile Include="ImagePreview.Designer.cs">
       <DependentUpon>ImagePreview.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageUtils.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +75,9 @@
     <Compile Include="quantization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmptyForm.resx">
+      <DependentUpon>EmptyForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

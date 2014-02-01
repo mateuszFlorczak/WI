@@ -39,14 +39,15 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ImageListView = new System.Windows.Forms.ListView();
+            this.RemoveAllImages = new System.Windows.Forms.Button();
+            this.RemoveImage = new System.Windows.Forms.Button();
+            this.SaveImage = new System.Windows.Forms.Button();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.MainImage = new System.Windows.Forms.PictureBox();
             this.OpenNewImage = new System.Windows.Forms.OpenFileDialog();
             this.OpenNewImageFolder = new System.Windows.Forms.FolderBrowserDialog();
-            this.SaveImage = new System.Windows.Forms.Button();
-            this.RemoveImage = new System.Windows.Forms.Button();
-            this.RemoveAllImages = new System.Windows.Forms.Button();
             this.SaveImageDialog = new System.Windows.Forms.SaveFileDialog();
             this.Menu.SuspendLayout();
             this.MainPanel.SuspendLayout();
@@ -54,6 +55,7 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
@@ -140,10 +142,10 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.panel1);
             this.splitContainer1.Panel1.Controls.Add(this.RemoveAllImages);
             this.splitContainer1.Panel1.Controls.Add(this.RemoveImage);
             this.splitContainer1.Panel1.Controls.Add(this.SaveImage);
-            this.splitContainer1.Panel1.Controls.Add(this.ImageListView);
             this.splitContainer1.Panel1MinSize = 255;
             // 
             // splitContainer1.Panel2
@@ -153,16 +155,60 @@
             this.splitContainer1.SplitterDistance = 255;
             this.splitContainer1.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.ImageListView);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 497);
+            this.panel1.TabIndex = 4;
+            // 
             // ImageListView
             // 
             this.ImageListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ImageListView.Location = new System.Drawing.Point(0, 0);
             this.ImageListView.Name = "ImageListView";
-            this.ImageListView.Size = new System.Drawing.Size(255, 532);
+            this.ImageListView.Size = new System.Drawing.Size(250, 497);
             this.ImageListView.TabIndex = 0;
             this.ImageListView.UseCompatibleStateImageBehavior = false;
             this.ImageListView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.ImageListView_ItemSelectionChanged);
             this.ImageListView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ImageListView_MouseDoubleClick);
+            // 
+            // RemoveAllImages
+            // 
+            this.RemoveAllImages.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.RemoveAllImages.Location = new System.Drawing.Point(165, 506);
+            this.RemoveAllImages.Name = "RemoveAllImages";
+            this.RemoveAllImages.Size = new System.Drawing.Size(87, 23);
+            this.RemoveAllImages.TabIndex = 3;
+            this.RemoveAllImages.Text = "Remove All";
+            this.RemoveAllImages.UseVisualStyleBackColor = true;
+            this.RemoveAllImages.Click += new System.EventHandler(this.RemoveAllImages_Click);
+            // 
+            // RemoveImage
+            // 
+            this.RemoveImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.RemoveImage.Location = new System.Drawing.Point(84, 506);
+            this.RemoveImage.Name = "RemoveImage";
+            this.RemoveImage.Size = new System.Drawing.Size(75, 23);
+            this.RemoveImage.TabIndex = 2;
+            this.RemoveImage.Text = "Remove";
+            this.RemoveImage.UseVisualStyleBackColor = true;
+            this.RemoveImage.Click += new System.EventHandler(this.RemoveImage_Click);
+            // 
+            // SaveImage
+            // 
+            this.SaveImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.SaveImage.Location = new System.Drawing.Point(3, 506);
+            this.SaveImage.Name = "SaveImage";
+            this.SaveImage.Size = new System.Drawing.Size(75, 23);
+            this.SaveImage.TabIndex = 1;
+            this.SaveImage.Text = "Save Image";
+            this.SaveImage.UseVisualStyleBackColor = true;
+            this.SaveImage.Click += new System.EventHandler(this.SaveImage_Click);
             // 
             // splitContainer2
             // 
@@ -191,45 +237,13 @@
             this.MainImage.Location = new System.Drawing.Point(0, 0);
             this.MainImage.Name = "MainImage";
             this.MainImage.Size = new System.Drawing.Size(527, 532);
+            this.MainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.MainImage.TabIndex = 0;
             this.MainImage.TabStop = false;
             // 
             // OpenNewImage
             // 
             this.OpenNewImage.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
-            // 
-            // SaveImage
-            // 
-            this.SaveImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SaveImage.Location = new System.Drawing.Point(3, 506);
-            this.SaveImage.Name = "SaveImage";
-            this.SaveImage.Size = new System.Drawing.Size(75, 23);
-            this.SaveImage.TabIndex = 1;
-            this.SaveImage.Text = "Save Image";
-            this.SaveImage.UseVisualStyleBackColor = true;
-            this.SaveImage.Click += new System.EventHandler(this.SaveImage_Click);
-            // 
-            // RemoveImage
-            // 
-            this.RemoveImage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.RemoveImage.Location = new System.Drawing.Point(84, 506);
-            this.RemoveImage.Name = "RemoveImage";
-            this.RemoveImage.Size = new System.Drawing.Size(75, 23);
-            this.RemoveImage.TabIndex = 2;
-            this.RemoveImage.Text = "Remove";
-            this.RemoveImage.UseVisualStyleBackColor = true;
-            this.RemoveImage.Click += new System.EventHandler(this.RemoveImage_Click);
-            // 
-            // RemoveAllImages
-            // 
-            this.RemoveAllImages.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.RemoveAllImages.Location = new System.Drawing.Point(165, 506);
-            this.RemoveAllImages.Name = "RemoveAllImages";
-            this.RemoveAllImages.Size = new System.Drawing.Size(87, 23);
-            this.RemoveAllImages.TabIndex = 3;
-            this.RemoveAllImages.Text = "Remove All";
-            this.RemoveAllImages.UseVisualStyleBackColor = true;
-            this.RemoveAllImages.Click += new System.EventHandler(this.RemoveAllImages_Click);
             // 
             // MainWindow
             // 
@@ -249,6 +263,7 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
@@ -272,12 +287,13 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.PictureBox MainImage;
-        private System.Windows.Forms.ListView ImageListView;
         private System.Windows.Forms.OpenFileDialog OpenNewImage;
         private System.Windows.Forms.FolderBrowserDialog OpenNewImageFolder;
         private System.Windows.Forms.Button RemoveAllImages;
         private System.Windows.Forms.Button RemoveImage;
         private System.Windows.Forms.Button SaveImage;
         private System.Windows.Forms.SaveFileDialog SaveImageDialog;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ListView ImageListView;
     }
 }

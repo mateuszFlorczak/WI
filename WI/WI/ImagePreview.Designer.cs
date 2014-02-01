@@ -82,6 +82,7 @@
             this.ImagePlace.Location = new System.Drawing.Point(0, 0);
             this.ImagePlace.Name = "ImagePlace";
             this.ImagePlace.Size = new System.Drawing.Size(400, 400);
+            this.ImagePlace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.ImagePlace.TabIndex = 0;
             this.ImagePlace.TabStop = false;
             this.ImagePlace.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ImagePlace_MouseMove);
@@ -130,7 +131,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ImagePreview";
-            this.Text = "Form2";
+            this.Text = "Image Preview";
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ImagePreview_MouseClick);
             this.panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);

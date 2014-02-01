@@ -1,4 +1,4 @@
-﻿namespace FunctionFactory
+﻿namespace WI
 {
     partial class EmptyForm
     {
@@ -99,6 +99,7 @@
             this.PreviewImage.Location = new System.Drawing.Point(0, 0);
             this.PreviewImage.Name = "PreviewImage";
             this.PreviewImage.Size = new System.Drawing.Size(258, 316);
+            this.PreviewImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PreviewImage.TabIndex = 0;
             this.PreviewImage.TabStop = false;
             // 

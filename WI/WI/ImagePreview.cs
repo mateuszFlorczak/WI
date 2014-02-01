@@ -23,7 +23,7 @@ namespace WI
         {
             InitializeComponent();
             _Listener = listener;
-            ImagePlace.Image = new Bitmap(image, ImagePlace.Size);
+            ImagePlace.Image = ImageUtils.Scale(image, ImagePlace.Size);
         }
 
         private void CoordsToLabel(Label label, int x, int y)

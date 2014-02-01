@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FunctionFactory;
 
+
 namespace WI
 {
     public partial class MainWindow : Form, MouseMoveListener
@@ -28,15 +29,16 @@ namespace WI
             
             //dummy data
             //var img = Image.FromFile("D:/Downloads/rar.png");
-            //var img2 = Image.FromFile("D:/Downloads/Untitled drawing.png");
+            var img2 = Image.FromFile("D:/Downloads/Untitled drawing.png");
             //AddImageToImageListView(img, "rar");
-            //AddImageToImageListView(img2, "Untitled drawing");
+            AddImageToImageListView(img2, "Untitled drawing");
 
 
             foreach (var function in _FunctionFactory.Functions)
                 this.splitContainer2.Panel1.Controls.Add(IFunctionToControl(function));
         }
 
+        //tworzenie przycisku na penelu po prawej na podstawie interfejsu IFunction
         private Control IFunctionToControl(IFunction function)
         {
             Button button = new Button();
@@ -47,12 +49,13 @@ namespace WI
             return button;
         }
 
+        //tworzenie okienka do ustawienia parametrów funkcji
         private void CreateFormAndShow(IFunction function)
         {
             string oldName = _MainImageName;
             string newName = String.Format("{0}_{1}", oldName, function.PolishName);
             Bitmap bitmap = new Bitmap(_MainImageOrginal);
-            IForm form = _FunctionFactory.GetDefaultForm();
+            IForm form = new EmptyForm();
             foreach (var control in function.ParamList)
                 form.AddControl(control.UserControl);
             form.OkButton += (s, e) => AddImageToImageListView(function.Calculate(bitmap), newName);
@@ -93,7 +96,7 @@ namespace WI
         {
             _MainImageOrginal = image;
             _MainImageName = name;
-            MainImage.Image = new Bitmap(image, MainImage.Size);
+            MainImage.Image = ImageUtils.Scale(image, MainImage.Size);
         }
 
         private void ClearMainImage()

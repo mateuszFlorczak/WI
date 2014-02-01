@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FunctionFactory;
 
-namespace FunctionFactory
+namespace WI
 {
     public partial class EmptyForm : Form, IForm
     {
-        Image orginal;
+        Bitmap orginal;
 
         public EmptyForm()
         {
@@ -30,10 +31,10 @@ namespace FunctionFactory
             this.ShowDialog();
         }
 
-        public void SetImagePreview(Image image)
+        public void SetImagePreview(Bitmap image)
         {
             orginal = image;
-            this.PreviewImage.Image = new Bitmap(image, this.PreviewImage.Size);
+            this.PreviewImage.Image = ImageUtils.Scale(image, this.PreviewImage.Size);
         }
 
         private void btOk_Click(object sender, EventArgs e)

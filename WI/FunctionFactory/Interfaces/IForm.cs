@@ -16,7 +16,7 @@ namespace FunctionFactory
 
         void Show();
 
-        void SetImagePreview(Image image);
+        void SetImagePreview(Bitmap image);
 
         EventHandler OkButton { get; set; }
     }

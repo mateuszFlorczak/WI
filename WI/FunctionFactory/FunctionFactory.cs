@@ -18,9 +18,5 @@ namespace FunctionFactory
             Functions = new List<IFunction>();
             Functions.Add(new Quantization());
         }
-        public IForm GetDefaultForm()
-        {
-            return new EmptyForm();
-        }
     }
 }
