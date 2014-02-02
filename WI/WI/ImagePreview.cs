@@ -52,7 +52,7 @@ namespace WI
             int x = mouseX - rect.X;
             int y = mouseY - rect.Y;
 
-            if (x <= 0 || y <= 0 || mouseX >= bitmap.Width || mouseY >= bitmap.Height)
+            if (x <= 0 || y <= 0 || x >= bitmap.Width || y >= bitmap.Height)
                 return;
             
             Color color = bitmap.GetPixel(x, y);

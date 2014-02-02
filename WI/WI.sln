@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WI", "WI\WI.csproj", "{B0A9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionFactory", "FunctionFactory\FunctionFactory.csproj", "{4DFA2185-B5E5-4A71-A6D2-BC094B9F18FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCG3", "D:\Downloads\MMCG3\MMCG3\MMCG3.csproj", "{90914424-F35A-4E50-A7FD-B8F4F5FB479D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCG3", "MMCG3\MMCG3\MMCG3.csproj", "{90914424-F35A-4E50-A7FD-B8F4F5FB479D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
