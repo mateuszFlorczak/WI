@@ -20,8 +20,6 @@ namespace WI
         string _MainImageName; //:<
         IList<ImagePreview> _PreviewList = new List<ImagePreview>();
 
-        Factory _FunctionFactory = new Factory();
-
         public MainWindow()
         {
             InitializeComponent();
@@ -29,13 +27,13 @@ namespace WI
             
             //dummy data
             //var img = Image.FromFile("D:/Downloads/rar.png");
-            var img2 = Image.FromFile("D:/Downloads/Untitled drawing.png");
+            //var img2 = Image.FromFile("D:/Downloads/Untitled drawing.png");
             //AddImageToImageListView(img, "rar");
-            AddImageToImageListView(img2, "Untitled drawing");
+            //AddImageToImageListView(img2, "Untitled drawing");
 
 
-            foreach (var function in _FunctionFactory.Functions)
-                this.splitContainer2.Panel1.Controls.Add(IFunctionToControl(function));
+            foreach (var function in Factory.Functions)
+                this.FunctionPlace.Controls.Add(IFunctionToControl(function));
         }
 
         //tworzenie przycisku na penelu po prawej na podstawie interfejsu IFunction
@@ -52,6 +50,8 @@ namespace WI
         //tworzenie okienka do ustawienia parametrów funkcji
         private void CreateFormAndShow(IFunction function)
         {
+            if (_MainImageOrginal == null)
+                return;
             string oldName = _MainImageName;
             string newName = String.Format("{0}_{1}", oldName, function.PolishName);
             Bitmap bitmap = new Bitmap(_MainImageOrginal);

@@ -35,12 +35,14 @@
             this.CurrentPixel = new System.Windows.Forms.Label();
             this.LastPixelContent = new System.Windows.Forms.Label();
             this.LastPixel = new System.Windows.Forms.Label();
+            this.CurrentPixelColorBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImagePlace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentPixelColorBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -68,6 +70,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.CurrentPixelColorBox);
             this.splitContainer1.Panel2.Controls.Add(this.CurrentPixelContent);
             this.splitContainer1.Panel2.Controls.Add(this.CurrentPixel);
             this.splitContainer1.Panel2.Controls.Add(this.LastPixelContent);
@@ -90,7 +93,7 @@
             // CurrentPixelContent
             // 
             this.CurrentPixelContent.AutoSize = true;
-            this.CurrentPixelContent.Location = new System.Drawing.Point(4, 78);
+            this.CurrentPixelContent.Location = new System.Drawing.Point(2, 138);
             this.CurrentPixelContent.Name = "CurrentPixelContent";
             this.CurrentPixelContent.Size = new System.Drawing.Size(157, 17);
             this.CurrentPixelContent.TabIndex = 3;
@@ -123,6 +126,14 @@
             this.LastPixel.TabIndex = 0;
             this.LastPixel.Text = "Last Pixel";
             // 
+            // CurrentPixelColorBox
+            // 
+            this.CurrentPixelColorBox.Location = new System.Drawing.Point(9, 77);
+            this.CurrentPixelColorBox.Name = "CurrentPixelColorBox";
+            this.CurrentPixelColorBox.Size = new System.Drawing.Size(76, 58);
+            this.CurrentPixelColorBox.TabIndex = 4;
+            this.CurrentPixelColorBox.TabStop = false;
+            // 
             // ImagePreview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -140,6 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ImagePlace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentPixelColorBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -153,6 +165,7 @@
         private System.Windows.Forms.Label CurrentPixel;
         private System.Windows.Forms.Label LastPixelContent;
         private System.Windows.Forms.Label LastPixel;
+        private System.Windows.Forms.PictureBox CurrentPixelColorBox;
 
     }
 }

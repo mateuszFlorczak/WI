@@ -49,6 +49,7 @@
             this.OpenNewImage = new System.Windows.Forms.OpenFileDialog();
             this.OpenNewImageFolder = new System.Windows.Forms.FolderBrowserDialog();
             this.SaveImageDialog = new System.Windows.Forms.SaveFileDialog();
+            this.FunctionPlace = new System.Windows.Forms.FlowLayoutPanel();
             this.Menu.SuspendLayout();
             this.MainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -57,6 +58,7 @@
             this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainImage)).BeginInit();
@@ -219,6 +221,7 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.FunctionPlace);
             this.splitContainer2.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.splitContainer2.Panel1MinSize = 255;
             // 
@@ -245,6 +248,14 @@
             // 
             this.OpenNewImage.Filter = "Image Files(*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
             // 
+            // FunctionPlace
+            // 
+            this.FunctionPlace.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FunctionPlace.Location = new System.Drawing.Point(0, 0);
+            this.FunctionPlace.Name = "FunctionPlace";
+            this.FunctionPlace.Size = new System.Drawing.Size(255, 532);
+            this.FunctionPlace.TabIndex = 0;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -264,6 +275,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
@@ -295,5 +307,6 @@
         private System.Windows.Forms.SaveFileDialog SaveImageDialog;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ListView ImageListView;
+        private System.Windows.Forms.FlowLayoutPanel FunctionPlace;
     }
 }

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.20827.3
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WI", "WI\WI.csproj", "{B0A91DAD-699B-4101-A8C6-8898CF310963}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionFactory", "FunctionFactory\FunctionFactory.csproj", "{4DFA2185-B5E5-4A71-A6D2-BC094B9F18FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MMCG3", "D:\Downloads\MMCG3\MMCG3\MMCG3.csproj", "{90914424-F35A-4E50-A7FD-B8F4F5FB479D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,10 @@ Global
 		{4DFA2185-B5E5-4A71-A6D2-BC094B9F18FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DFA2185-B5E5-4A71-A6D2-BC094B9F18FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DFA2185-B5E5-4A71-A6D2-BC094B9F18FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90914424-F35A-4E50-A7FD-B8F4F5FB479D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90914424-F35A-4E50-A7FD-B8F4F5FB479D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90914424-F35A-4E50-A7FD-B8F4F5FB479D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90914424-F35A-4E50-A7FD-B8F4F5FB479D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

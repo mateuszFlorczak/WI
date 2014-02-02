@@ -48,18 +48,28 @@
     <Compile Include="CoreControls\IntSlider.Designer.cs">
       <DependentUpon>IntSlider.cs</DependentUpon>
     </Compile>
+    <Compile Include="CoreFunctions\MedianCut.cs" />
+    <Compile Include="CoreFunctions\PopularityQuantization.cs" />
     <Compile Include="CoreFunctions\Quantization.cs" />
+    <Compile Include="CoreFunctions\WU.cs" />
     <Compile Include="FunctionFactory.cs" />
     <Compile Include="Interfaces\IForm.cs" />
     <Compile Include="Interfaces\IFunction.cs" />
     <Compile Include="Interfaces\IFunctionParam.cs" />
     <Compile Include="Interfaces\IValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZZ\Class1.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CoreControls\IntSlider.resx">
       <DependentUpon>IntSlider.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Downloads\MMCG3\MMCG3\MMCG3.csproj">
+      <Project>{90914424-f35a-4e50-a7fd-b8f4f5fb479d}</Project>
+      <Name>MMCG3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

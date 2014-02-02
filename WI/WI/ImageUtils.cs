@@ -35,5 +35,17 @@ namespace WI
             }
             return new Bitmap(bitmap, newSize);
         }
+
+        public static Bitmap CreateBitmap(Size size, Color color)
+        {
+            Bitmap bmp = new Bitmap(size.Width, size.Height);
+            using (Graphics graph = Graphics.FromImage(bmp))
+            using (SolidBrush brush = new SolidBrush(color))
+            {
+                Rectangle ImageSize = new Rectangle(0, 0, size.Width, size.Height);
+                graph.FillRectangle(brush, ImageSize);
+            }
+            return bmp;
+        }
     }
 }

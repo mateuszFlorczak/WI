@@ -32,3 +32,5 @@ C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.MainWindow.resources
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.Form1.resources
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.ImagePreview.resources
 C:\Users\mareczek\Documents\GitHub\WI\WI\WI\obj\Debug\WI.EmptyForm.resources
+C:\Users\mareczek\Documents\GitHub\WI\WI\WI\bin\Debug\MMCG3.exe
+C:\Users\mareczek\Documents\GitHub\WI\WI\WI\bin\Debug\MMCG3.pdb
